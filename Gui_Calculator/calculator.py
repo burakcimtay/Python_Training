@@ -12,10 +12,9 @@ def add(symbol):
 def evaluate():
     global calculation
     try:
-        result = str(eval(calculation))
-        calculation=""
+        calculation = str(eval(calculation))
         text.delete(1.0, "end")
-        text.insert(1.0, result)
+        text.insert(1.0, calculation)
     
     except:
         clear()
